@@ -1,0 +1,59 @@
+! ****************************************************************************************************************************
+! ***** DEFINITION OF MODEL CONTROL INFORMATION ******************************************************************************
+! ****************************************************************************************************************************
+! ****************************************************************************************************************************
+! Note: lines starting with "!" are treated as comment lines -- there is no limit on the number of comment lines.
+!    lines starting with <xxx> are read till "!"
+!
+! ****************************************************************************************************************************
+! RUN CONTROL
+! --------------------------
+<case_name>                Case_name                                    ! simulation name - used for output netcdf name
+<sim_start>                1970-01-01                                   ! time of simulation start (year-month-day)
+<sim_end>                  2020-12-31                                   ! time of simulation end (year-month-day)
+<route_opt>                1                                            ! option for routing schemes 0-> both, 1->IRF, 2->KWT otherwise error
+! ****************************************************************************************************************************
+! DEFINE DIRECTORIES
+! --------------------------
+<ancil_dir>                ./ancillary_data/                            ! directory containing ancillary data (river segment data,
+<input_dir>                ./input/                                     ! directory containing input data
+<output_dir>               ./output/                                    ! directory containing output data
+! ****************************************************************************************************************************
+! DEFINE FINE NAME AND DIMENSIONS
+! ---------------------------------------
+<fname_ntopOld>            domain_ntopo.nc                              ! name of netCDF containing river segment data
+<dname_sseg>               n                                            ! dimension name of the stream segments
+<dname_nhru>               n                                            ! dimension name of the HRUs
+! ****************************************************************************************************************************
+! DEFINE DESIRED VARIABLES FOR THE NETWORK TOPOLOGY
+! ---------------------------------------------------------
+<seg_outlet>               -9999                                        ! seg_id of outlet streamflow segment -9999 for all segments
+! ****************************************************************************************************************************
+! DEFINE RUNOFF FILE
+! ----------------------------------
+<fname_qsim>               input_files.txt                              ! name of netCDF containing the HRU runoff
+<vname_qsim>               LOFF                                         ! name of HRU runoff variable
+<vname_hruid>              id                                           ! name of the HRU id
+<dname_hruid>              id                                           ! name of HRU dimension
+<vname_time>               time                                         ! name of time variable in the runoff file
+<dname_time>               time                                         ! name of time dimension
+<units_qsim>               mm/day                                       ! units of runoff
+<dt_qsim>                  86400                                        ! time interval of the runoff
+<is_remap>                 F                                            !
+! ****************************************************************************************************************************
+! Spatially constant parameter Namelist name
+! ---------------------------
+<param_nml>                param.nml.default                            ! namelist parameters
+! ****************************************************************************************************************************
+! Dictionary to map variable names
+! ---------------------------
+<varname_area>             unitarea                                     ! name of variable holding hru area
+<varname_length>           length                                       ! name of variable holding segment length
+<varname_slope>            slope                                        ! name of variable holding segment slope
+<varname_HRUid>            COMID                                        ! name of variable holding HRU id
+<varname_hruSegId>         COMID                                        ! name of variable holding the stream segment below each HRU
+<varname_segId>            COMID                                        ! name of variable holding the ID of each stream segment
+<varname_downSegId>        NextDownID                                   ! name of variable holding the ID of the next downstream segment
+! ****************************************************************************************************************************
+! ****************************************************************************************************************************
+! ****************************************************************************************************************************

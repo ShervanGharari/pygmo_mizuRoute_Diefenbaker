@@ -1,0 +1,151 @@
+ Job start date: 2024-04-04  time: 18:25:35
+ ---------------------------------------------------
+--------------------------
+  HYPE version 5.24.0                  
+--------------------------
+ File opened: ./info.txt
+ File read  : ./info.txt
+ Simulation information loaded (info.txt)
+
+ --------Information about the simulation---------
+ Current model set-up:  ./
+ and result folder:     ./results/
+ Simulation sequence:              0
+
+ Simulation begin date  1980-01-01 00:00
+ Crit/Output start date 1980-01-06 00:00
+ Simulation end date    2017-12-30 00:00
+ Simulation steplength  1d  
+ Number of substances modelled           0
+ Model options:
+           Snowfall model           0
+       Snowfalldist model           2
+           Snowmelt model           2
+           Snowevap model           1
+           Snowheat model           0
+        Snowdensity model           0
+  Frozen soil water flows           2
+      Lakeriver ice model           0
+   Glacier initialization           1
+   Deep groundwater model           0
+         Floodplain model           0
+     Surface runoff model           0
+       Infiltration model           3
+            Wetland model           2
+ Surface water temp model           0
+      Growth season model           0
+            Erosion model           0
+       Soil leakage model           0
+       Ilake connectivity           0
+           Lake siltation           0
+  Lake substance flushing           0
+         River flow model           0
+           River T2 model           0
+  River sediment & resusp           0
+
+ Output information:
+    6 output variables will be saved as timeseries output
+    6 output variables will be saved as netcdf timeseries output
+ -------------------------------------------------
+
+ File opened: ./GeoClass.txt
+ Class information loaded (GeoClass)
+ File opened: ./GeoData.txt
+ Geographical information loaded
+ Model option:
+                PET model           3
+ Observation data checks will be performed
+ File ready: ./Pobs.nc
+ File ready: ./Tobs.nc
+ File ready: ./TMINobs.nc
+ File ready: ./TMAXobs.nc
+ File opened: ./par.txt
+ WARNING: too many values in parameter file for ttmp
+ WARNING: too many values in parameter file for cmlt
+ WARNING: too many values in parameter file for cmrad
+ WARNING: too many values in parameter file for snalbmin
+ WARNING: too many values in parameter file for snalbmax
+ WARNING: too many values in parameter file for snalbkexp
+ WARNING: too many values in parameter file for snkika
+ WARNING: too many values in parameter file for fscdistmax
+ WARNING: too many values in parameter file for fscdist0
+ WARNING: too many values in parameter file for fscdist1
+ WARNING: too many values in parameter file for kc3
+ WARNING: too many values in parameter file for alb
+ WARNING: too many values in parameter file for ttrig
+ WARNING: too many values in parameter file for treda
+ WARNING: too many values in parameter file for tredb
+ WARNING: too many values in parameter file for cevp
+ WARNING: too many values in parameter file for fepotsnow
+ WARNING: too many values in parameter file for bfroznsoil
+ WARNING: too many values in parameter file for logsatmp
+ WARNING: too many values in parameter file for bcosby
+ WARNING: too many values in parameter file for surfmem
+ WARNING: too many values in parameter file for depthrel
+ WARNING: too many values in parameter file for frost
+ WARNING: too many values in parameter file for rrcs1
+ WARNING: too many values in parameter file for rrcs2
+ WARNING: too many values in parameter file for trrcs
+ WARNING: too many values in parameter file for mperc1
+ WARNING: too many values in parameter file for mperc2
+ WARNING: too many values in parameter file for sfrost
+ WARNING: too many values in parameter file for srrate
+ WARNING: too many values in parameter file for wcwp1
+ WARNING: too many values in parameter file for wcwp2
+ WARNING: too many values in parameter file for wcwp3
+ WARNING: too many values in parameter file for wcfc1
+ WARNING: too many values in parameter file for wcfc2
+ WARNING: too many values in parameter file for wcfc3
+ WARNING: too many values in parameter file for wcep1
+ WARNING: too many values in parameter file for wcep2
+ WARNING: too many values in parameter file for wcep3
+ WARNING: too many values in parameter file for srrcs
+ Model parameters loaded
+ Setup- and model data checks will be performed
+ Data checks has been completed
+
+ ---------------------------------------------------
+ Initialisations finished, calculations starts: 2024-04-04  time: 18:25:36
+ ---------------------------------------------------
+
+Start simulate year: 1980
+Start simulate year: 1981
+Start simulate year: 1982
+Start simulate year: 1983
+Start simulate year: 1984
+Start simulate year: 1985
+Start simulate year: 1986
+Start simulate year: 1987
+Start simulate year: 1988
+Start simulate year: 1989
+Start simulate year: 1990
+Start simulate year: 1991
+Start simulate year: 1992
+Start simulate year: 1993
+Start simulate year: 1994
+Start simulate year: 1995
+Start simulate year: 1996
+Start simulate year: 1997
+Start simulate year: 1998
+Start simulate year: 1999
+Start simulate year: 2000
+Start simulate year: 2001
+Start simulate year: 2002
+Start simulate year: 2003
+Start simulate year: 2004
+Start simulate year: 2005
+Start simulate year: 2006
+Start simulate year: 2007
+Start simulate year: 2008
+Start simulate year: 2009
+Start simulate year: 2010
+Start simulate year: 2011
+Start simulate year: 2012
+Start simulate year: 2013
+Start simulate year: 2014
+Start simulate year: 2015
+Start simulate year: 2016
+Start simulate year: 2017
+
+ ---------------------------------------------------
+ Job finished date: 2024-04-04  time: 18:25:47

@@ -1,0 +1,435 @@
+!! model=5.24.0; comment=Test log file;
+ indatacheckonoff           2
+ indatachecklevel           2
+ ---------------------------------------------------------------
+ ---------------- OBSERVATIONS ---------------------------------
+ [Passed] ./Pobs.nc
+         581 file found                       passed: T -
+         555 forcings_stationid               passed: T gt_zero
+         557 consistency, model and Pobs      passed: T -
+         559 time period                      passed: T -
+         556 number_of_neg_or_miss            passed: T eq_zero
+ file found: incorporated
+  forcings_stationid:    28069246.0     -   28071796.0
+ consistency, model and Pobs: incorporated
+ time period: incorporated
+  number_of_neg_or_miss:    0.00000000     -   0.00000000
+ [Passed] ./Tobs.nc
+         581 file found                       passed: T -
+         555 forcings_stationid               passed: T gt_zero
+         557 consistency, model and Tobs      passed: T -
+         559 time period                      passed: T -
+         556 number_of_neg_or_miss            passed: T eq_zero
+ file found: incorporated
+  forcings_stationid:    28069246.0     -   28071796.0
+ consistency, model and Tobs: incorporated
+ time period: incorporated
+  number_of_neg_or_miss:    0.00000000     -   0.00000000
+ [Passed] ./TMINobs.nc
+         581 file found                       passed: T -
+         555 forcings_stationid               passed: T gt_zero
+         557 consistency, model and TMINobs   passed: T -
+         559 time period                      passed: T -
+         556 number_of_neg_or_miss            passed: T eq_zero
+ file found: incorporated
+  forcings_stationid:    28069246.0     -   28071796.0
+ consistency, model and TMINobs: incorporated
+ time period: incorporated
+  number_of_neg_or_miss:    0.00000000     -   0.00000000
+ [Passed] ./TMAXobs.nc
+         581 file found                       passed: T -
+         555 forcings_stationid               passed: T gt_zero
+         557 consistency, model and TMAXobs   passed: T -
+         559 time period                      passed: T -
+         556 number_of_neg_or_miss            passed: T eq_zero
+ file found: incorporated
+  forcings_stationid:    28069246.0     -   28071796.0
+ consistency, model and TMAXobs: incorporated
+ time period: incorporated
+  number_of_neg_or_miss:    0.00000000     -   0.00000000
+ [Passed] ./Xobs.txt
+ -------------------- STATUS -----------------------------------
+ -- Observations --           0
+ ---------------------------------------------------------------
+ ---------------- FROM FILE LOADING ----------------------------
+ [Passed] ext.lakedata                    
+ INFO: LakeData.txt not found, but not required                                                                                                              
+ [Passed] ext.geodata                     
+ INFO: columns ignored: -
+ column code:           1           1           2           2           2           2           2           2           2           2           2           2           2           2           2           2           2           2           2           2           2           2           2
+ [Passed] ext.par                         
+ WARN: too many values in parameter file for ttmp
+ WARN: too many values in parameter file for cmlt
+ WARN: too many values in parameter file for cmrad
+ WARN: too many values in parameter file for snalbmin
+ WARN: too many values in parameter file for snalbmax
+ WARN: too many values in parameter file for snalbkexp
+ WARN: too many values in parameter file for snkika
+ WARN: too many values in parameter file for fscdistmax
+ WARN: too many values in parameter file for fscdist0
+ WARN: too many values in parameter file for fscdist1
+ WARN: too many values in parameter file for kc3
+ WARN: too many values in parameter file for alb
+ WARN: too many values in parameter file for ttrig
+ WARN: too many values in parameter file for treda
+ WARN: too many values in parameter file for tredb
+ WARN: too many values in parameter file for cevp
+ WARN: too many values in parameter file for fepotsnow
+ WARN: too many values in parameter file for bfroznsoil
+ WARN: too many values in parameter file for logsatmp
+ WARN: too many values in parameter file for bcosby
+ WARN: too many values in parameter file for surfmem
+ WARN: too many values in parameter file for depthrel
+ WARN: too many values in parameter file for frost
+ WARN: too many values in parameter file for rrcs1
+ WARN: too many values in parameter file for rrcs2
+ WARN: too many values in parameter file for trrcs
+ WARN: too many values in parameter file for mperc1
+ WARN: too many values in parameter file for mperc2
+ WARN: too many values in parameter file for sfrost
+ WARN: too many values in parameter file for srrate
+ WARN: too many values in parameter file for wcwp1
+ WARN: too many values in parameter file for wcwp2
+ WARN: too many values in parameter file for wcwp3
+ WARN: too many values in parameter file for wcfc1
+ WARN: too many values in parameter file for wcfc2
+ WARN: too many values in parameter file for wcfc3
+ WARN: too many values in parameter file for wcep1
+ WARN: too many values in parameter file for wcep2
+ WARN: too many values in parameter file for wcep3
+ WARN: too many values in parameter file for srrcs
+ INFO: parameters not recognized: -
+ ---------------------------------------------------------------
+ ------------------ GENERIC ------------------------------------
+ --info.txt--
+ [Passed] info.txt
+         530 nof timesteps                    passed: T -
+         616 nof print steps                  passed: T -
+         531 bdate range                      passed: T -
+         532 edate range                      passed: T -
+         533 cdate range                      passed: T -
+         534 no duplicated time/mapoutputs    passed: T -
+         629 enough signfigures               passed: T -
+         667 inconsistency in substances set  passed: T -
+ nof timesteps: incorporated
+ nof print steps: incorporated
+ bdate range: incorporated
+ edate range: incorporated
+ cdate range: incorporated
+ no duplicated time/mapoutputs: incorporated
+ enough signfigures: incorporated
+ inconsistency in substances set: incorporated
+ --GeoData.txt--
+ [Failed] geodata
+         535 some basin areas gt zero         passed: T -
+         536 basin area zero                  passed: T -
+         537 subid range                      passed: F -
+         538 basin slope                      passed: T -
+         539 basin rivlen                     passed: T -
+         541 basinpartsum                     passed: F one_plus_minus_point_1_percent
+         540 slc fractions positive           passed: T -
+         577 basin part2cr                    passed: T -
+         544 no abstraction without olake     passed: T -
+         546 linking main branch              passed: T -
+ some basin areas gt zero: incorporated
+ basin area zero: incorporated
+ subid range: incorporated
+ basin slope: incorporated
+ basin rivlen: incorporated
+  basinpartsum:   0.871273160     -   1.00000000
+ slc fractions positive: incorporated
+ basin part2cr: incorporated
+ no abstraction without olake: incorporated
+ linking main branch: incorporated
+ Tested with number of failures:            2
+ --GeoClass.txt--
+ [Passed] geoclass
+         548 nclass gt zero                   passed: T -
+         549 classdataluse                    passed: T gt_zero
+         550 classdatasoil                    passed: T gt_zero
+         551 no multiple classes, ilake,olake passed: T -
+         553 increasing soildepth             passed: T -
+         552 soildepth                        passed: T gt_zero
+ nclass gt zero: incorporated
+  classdataluse:    4.00000000     -   16.0000000
+  classdatasoil:    2.00000000     -   3.00000000
+ no multiple classes, ilake,olake: incorporated
+ increasing soildepth: incorporated
+  soildepth:    2.29600000     -   2.29600000
+ --LakeData.txt--
+ [Passed] lakedata
+         677 dambuild_before_removed          passed: T -
+ dambuild_before_removed: incorporated
+ --DamData.txt--
+ [Passed] damdata
+ --MgmtData.txt--
+ --BranchData.txt--
+ --Outregions.txt--
+ [Passed] outregion
+         641 outregion ids are unique         passed: T -
+         642 outregion subids exist           passed: T -
+ outregion ids are unique: incorporated
+ outregion subids exist: incorporated
+ --mixed generic (no specific file)--
+ [Passed] modeloption range
+ [Passed] snalbminmax range
+ [Failed] water holding capacity
+         506 modeloption range                passed: T -
+         187 snalbmin                         passed: T ge_zero_and_le_one
+         188 snalbmax                         passed: T ge_zero_and_le_one
+         507 snalbminmax range                passed: T -
+          47 wcfc                             passed: T ge_zero_and_lt_one
+          48 wcwp                             passed: T ge_zero_and_lt_one
+          49 wcep                             passed: T ge_zero_and_lt_one
+          50 wcfc1                            passed: T ge_zero_and_lt_one
+          53 wcfc2                            passed: T ge_zero_and_lt_one
+          56 wcfc3                            passed: T ge_zero_and_lt_one
+          51 wcwp1                            passed: T ge_zero_and_lt_one
+          54 wcwp2                            passed: T ge_zero_and_lt_one
+          57 wcwp3                            passed: T ge_zero_and_lt_one
+          52 wcep1                            passed: T ge_zero_and_lt_one
+          55 wcep2                            passed: T ge_zero_and_lt_one
+          58 wcep3                            passed: T ge_zero_and_lt_one
+         508 wcwp+wcfc+wcep                   passed: F -
+ modeloption range: incorporated
+ snalbmin:  0.524781764      0.524781764      0.449999988      0.250044137      0.243925437      0.251664609      0.251664609      0.251664609      0.251664609      0.243925437      0.409460604      0.228565410      0.524781764      0.524781764      0.524781764      0.524781764    
+ snalbmax:  0.850000024      0.850000024      0.850000024      0.850000024      0.850000024      0.850000024      0.850000024      0.850000024      0.850000024      0.850000024      0.850000024      0.850000024      0.850000024      0.850000024      0.850000024      0.850000024    
+ snalbminmax range: incorporated
+ wcfc:   0.00000000       0.00000000       0.00000000    
+ wcwp:   0.00000000       0.00000000       0.00000000    
+ wcep:   0.00000000       0.00000000       0.00000000    
+ wcfc1:  0.434399992      0.175799996      0.352600008    
+ wcfc2:  0.139200002      0.196600005      0.381799996    
+ wcfc3:  0.230700001      0.207499996      0.405499995    
+ wcwp1:  0.273200005      0.214000002      0.147900000    
+ wcwp2:  0.229300007      0.256000012       9.83999968E-02
+ wcwp3:  0.325700015       5.79999983E-02  0.363900006    
+ wcep1:  0.872900009      0.416799992      0.874300003    
+ wcep2:  0.117700003      0.277300000       3.29000019E-02
+ wcep3:  0.306400001      0.800400019      0.583199978    
+ wcwp+wcfc+wcep: incorporated
+ Tested with number of failures:            1
+ ---------------------------------------------------------------
+ ------------------ WATER --------------------------------------
+ -------------- Processes above ground -------------------------
+ -- Temperature and precipitation --
+ -- Evaporation --
+INFO: petmodel used: (3)(modified) Hargreaves-Samani
+ [Passed] petmodel: (modified) Hargreaves-Samani with parameter, input and forcing data
+ [Passed] actual_soil_evapotranspiration with parameter, input and forcing data
+         311 kc3                              passed: T gt_zero
+         218 krs                              passed: T ne_zero
+         501 elevation                        passed: T ge_lowest_natural_point
+         502 latitude                         passed: T plus_minus_90
+         515 latitude defined                 passed: T -
+         494 tobs                             passed: T -
+         496 tmaxobs                          passed: T -
+         495 tminobs                          passed: T -
+         297 treda                            passed: T gt_zero
+         296 ttrig                            passed: T ge_zero
+         298 tredb                            passed: T ge_zero
+           1 lp                               passed: T ge_zero_and_le_one
+          26 epotdist                         passed: T gt_zero
+ kc3:   1.01751184       1.01751184       1.20122421       1.33449340       1.26505935       1.02070880       1.02070880       1.02070880       1.02070880       1.26505935       1.34244835       1.02495909       1.02495909       1.02495909       1.02495909       1.02495909    
+ krs:  0.546000004    
+  elevation:    708.455200     -   1825.96484
+  latitude:    36.9990311     -   37.4051399
+ latitude defined: incorporated
+ tobs: incorporated
+ tmaxobs: incorporated
+ tminobs: incorporated
+ treda:  0.839999974      0.839999974      0.839999974      0.839999974      0.949999988      0.949999988      0.949999988      0.949999988      0.949999988      0.699999988      0.899999976      0.800000012      0.800000012      0.800000012      0.800000012      0.800000012    
+ ttrig:   0.00000000       0.00000000       0.00000000       0.00000000       0.00000000       0.00000000       0.00000000       0.00000000       0.00000000       0.00000000       0.00000000       0.00000000       0.00000000       0.00000000       0.00000000       0.00000000    
+ tredb:  0.400000006      0.400000006      0.400000006      0.400000006      0.400000006      0.400000006      0.400000006      0.400000006      0.400000006      0.400000006      0.400000006      0.400000006      0.400000006      0.400000006      0.400000006      0.400000006    
+ lp:  0.546000004    
+ epotdist:  0.546000004    
+ -- Atmospheric deposition of nitrogen and phosphorus --
+ [Passed] atmospheric_deposition with parameter, input and forcing data
+ -------------- Land routines ----------------------------------
+ -- Soil water --
+ [Passed] infiltration: restricted infiltration into frozen soils (infilt after runoff) with parameter, input and forcing data
+ [Passed] surfacerunoff: based on soil water treshold with parameter, input and forcing data
+ [Passed] frozensoil: unfrozen water as function of three temperatures with parameter, input and forcing data
+ [Passed] soil temperature model with parameter, input and forcing data
+         309 bfroznsoil                       passed: T ge_zero
+         514 macrate srrate sum pos           passed: T -
+         105 mactrsm                          passed: T ge_zero
+         104 mactrinf                         passed: T ge_zero
+         102 srrate                           passed: T ge_zero_and_le_one
+         103 macrate                          passed: T ge_zero_and_le_one
+         513 macrate srrate sum               passed: T -
+         361 logsatmp                         passed: T gt_zero
+         362 bcosby                           passed: T gt_zero
+         363 fzsexpand                        passed: T ge_zero_and_le_one
+          74 deepmem                          passed: T ge_one
+          75 surfmem                          passed: T ge_one
+          66 depthrel                         passed: T ge_zero
+         131 sdnsnew                          passed: T gt_zero
+ bfroznsoil:   2.09999990       2.09999990       2.09999990    
+ macrate srrate sum pos: incorporated
+ mactrsm:   0.00000000       0.00000000       0.00000000    
+ mactrinf:   0.00000000       0.00000000       0.00000000    
+ srrate:  0.497500002      0.448900014      0.187399998    
+ macrate:   0.00000000       0.00000000       0.00000000    
+ macrate srrate sum: incorporated
+ logsatmp:   1.14999998       1.14999998       1.88000000    
+ bcosby:   4.73999977       4.73999977       5.32999992    
+ fzsexpand:   0.00000000       0.00000000       0.00000000    
+ deepmem:   1000.00000    
+ surfmem:   17.7999992       17.7999992       17.7999992       17.7999992       5.15000010       5.15000010       5.15000010       5.15000010       5.15000010       5.15000010       5.15000010       5.15000010       5.15000010       5.15000010       5.15000010       5.15000010    
+ depthrel:   1.11520004       1.11520004       1.11520004       1.11520004       2.47000003       2.47000003       2.47000003       2.47000003       2.47000003       2.47000003       2.47000003       2.47000003       2.47000003       2.47000003       2.47000003       2.47000003    
+ sdnsnew:  0.129999995    
+ -- Snow --
+ [Passed] snowfallmodel: threshold temperatures with parameter, input and forcing data
+ [Failed] snowfalldist: log-linear WSF function with parameter, input and forcing data
+ [Passed] snowmeltmodel: temperature+radiation index with parameter, input and forcing data
+ [Passed] snowevaporation: epotsnow = epot * fepotsnow (landuse dependent) with parameter, input and forcing data
+ [Passed] snowdensity: depending on age of snow, snowdens0 and snowdensdt with parameter, input and forcing data
+ [Passed] snowheat: off with parameter, input and forcing data
+ [Passed] snow liquid
+          37 ttpi                             passed: T ge_zero
+         633 no wind directions               passed: F -
+          43 wsfscale                         passed: F gt_zero
+          45 sfdmax                           passed: F gt_zero
+         160 sfdlim                           passed: T ge_zero_and_le_one
+         634 uwobs                            passed: F -
+         635 vwobs                            passed: F -
+          32 cmlt                             passed: T ge_zero
+         256 fsceff                           passed: T ge_zero_and_le_one
+         187 snalbmin                         passed: T ge_zero_and_le_one
+         188 snalbmax                         passed: T ge_zero_and_le_one
+         189 snalbkexp                        passed: T gt_zero
+         190 cmrad                            passed: T gt_zero
+         255 cmrefr                           passed: T ge_zero
+         495 tminobs                          passed: T -
+         496 tmaxobs                          passed: T -
+         254 fepotsnow                        passed: T gt_zero
+         131 sdnsnew                          passed: T gt_zero
+         110 snowdensdt                       passed: T ge_zero
+         364 whcsnow                          passed: T ge_zero_and_lt_one
+ ttpi:   1.70829999    
+ no wind directions: incorporated
+ wsfscale:   0.00000000    
+ sfdmax:   0.00000000    
+ sfdlim:   0.00000000    
+ uwobs: incorporated
+ vwobs: incorporated
+ cmlt:   9.70209980       6.00349998       1.17859995       9.35249996       1.71759999       5.85230017       4.19570017       8.63829994       8.00899982       5.48649979       1.10099995       5.51499987       9.70209980       9.70209980       9.70209980       9.70209980    
+ fsceff:  0.990000010    
+ snalbmin:  0.524781764      0.524781764      0.449999988      0.250044137      0.243925437      0.251664609      0.251664609      0.251664609      0.251664609      0.243925437      0.409460604      0.228565410      0.524781764      0.524781764      0.524781764      0.524781764    
+ snalbmax:  0.850000024      0.850000024      0.850000024      0.850000024      0.850000024      0.850000024      0.850000024      0.850000024      0.850000024      0.850000024      0.850000024      0.850000024      0.850000024      0.850000024      0.850000024      0.850000024    
+ snalbkexp:  0.100000001      0.100000001      0.100000001      0.100000001      0.100000001      0.100000001      0.100000001      0.100000001      0.100000001      0.100000001      0.100000001      0.100000001      0.100000001      0.100000001      0.100000001      0.100000001    
+ cmrad:  0.249065876      0.249065876       1.50000000      0.176534861      0.685361445      0.174564317      0.174564317      0.174564317      0.174564317      0.685361445      0.501842737       1.14828870E-02  0.249065876      0.249065876      0.249065876      0.249065876    
+ cmrefr:   5.00000007E-02
+ tminobs: incorporated
+ tmaxobs: incorporated
+ fepotsnow:  0.912879467      0.912879467      0.180000007      0.533387661      0.460848987      0.120024160      0.120024160      0.120024160      0.120024160      0.460848987      0.206956849      0.197802201      0.197802201      0.197802201      0.197802201      0.197802201    
+ sdnsnew:  0.129999995    
+ snowdensdt:   1.59999996E-03
+ whcsnow:   7.99999982E-02
+ Tested with number of failures:            5
+ -- Glaciers --
+ [Passed] all GeoData glaciers in GlacierData
+ [Passed] glacier volume-area with parameters
+ [Passed] glacierini: init from SLC+parameters overrides state_save with parameter, input and forcing data
+ -------------- Rivers and lakes -------------------------------
+ -- Rivers --
+ [Passed] riverflowmodel: original delay&attenuation (fixed) with parameter, input and forcing data
+ [Passed] lakeriverice: off with parameter, input and forcing data
+ [Passed] hydraulic geometry with parameter, input and forcing data
+          11 damp                             passed: T ge_zero_and_le_one
+          10 rivvel                           passed: T gt_zero
+         198 licetf                           passed: T ge_zero
+         205 ricetf                           passed: T ge_zero
+         356 ricebupo                         passed: T ge_zero_and_le_one
+         643 ricethpo in range                passed: T -
+         359 ricecwi                          passed: T ge_zero
+         352 liceqhw                          passed: T ge_zero
+         357 riceqhmn                         passed: T ge_zero
+         358 riceqhmx                         passed: T ge_zero
+         339 hygeomf                          passed: T ge_zero
+         340 hygeomm                          passed: T ge_zero
+         341 hygeomc                          passed: T ge_zero
+         342 hygeomk                          passed: T ge_zero
+ damp:  0.161400005    
+ rivvel:   9.92669964    
+ licetf:   0.00000000    
+ ricetf:   0.00000000    
+ ricebupo:   0.00000000    
+ ricethpo in range: incorporated
+ ricecwi:   0.00000000    
+ liceqhw:   0.00000000    
+ riceqhmn:   0.00000000    
+ riceqhmx:   0.00000000    
+ hygeomf:   0.00000000    
+ hygeomm:   0.00000000    
+ hygeomc:   0.00000000    
+ hygeomk:   0.00000000    
+ -- Lakes --
+ [Passed] swtemperature: old (MA-temp) with parameter, input and forcing data
+ [Passed] connectivity: no connectivity model with parameter, input and forcing data
+ [Passed] no single lakes with parameter, input and forcing data
+ [Passed] no local lakes that need rating curve
+ [Passed] no outlet lakes in model that need rating curves
+ [Passed] regvol less than lake volume
+ [Passed] valid regulation settings
+         168 laketemp                         passed: T ge_zero
+          13 gratk                            passed: F gt_zero
+          14 gratp                            passed: F gt_zero
+         630 regvol                           passed: T -
+         668 deltaw0                          passed: T -
+         684 regvol_deltaw0                   passed: T -
+ laketemp:   0.00000000    
+ gratk:   0.00000000    
+ gratp:   0.00000000    
+ regvol: incorporated
+ deltaw0: incorporated
+ regvol_deltaw0: incorporated
+ Tested with number of failures:            2
+ -- Floodplains --
+ [Passed] floodmodel: not used with parameter, input and forcing data
+ -- Bifurcations --
+ -------------- Water management -------------------------------
+ -- Constructed wetlands --
+ [Passed] wetlandmodel: waterclass wetlands with parameter, input and forcing data
+ -- Irrigation --
+ -- Point sources --
+ -- Water transfer --
+ -------------- Deep processes ---------------------------------
+ [Passed] deepground: none with parameter, input and forcing data
+ -- Regional groundwater flow --
+ -- Aquifers --
+ ---------------------------------------------------------------
+ ------------------ SUBSTANCES ---------------------------------
+ -------------- Nitrogen and phosphorus in land routines -------
+ -- Nutrient Sources --
+ [Passed] no fert or plant res sources simulated
+ [Passed] rural load with parameter, input and forcing data
+         604 volloc                           passed: T ge_zero
+         644 rural landarea                   passed: T -
+  volloc:    0.00000000     -   0.00000000
+ rural landarea: incorporated
+ -- Vegetation and soil surface processes --
+ -- Nutrient soil processes --
+ -- Nutrient leakage from outer source --
+ -------------- Nitrogen and phosphorus in rivers and lakes ----
+ -- Denitrification --
+ -- Primary production and mineralization --
+ -- Sedimentation/Resuspension --
+ -- Internal load --
+ -------------- Organic carbon ---------------------------------
+ -- Source of organic material --
+ -- Soil processes --
+ -- Riparian zone --
+ -- Rivers and lakes --
+ -------------- Tracers ----------------------------------------
+ -- General tracer (T1) --
+ -- Water temperature (T2) --
+ -------------- Sediment ---------------------------------------
+ -- Sources --
+ -- Rivers and lakes --
+ ---------------------------------------------------------------
+ -------------------- STATUS -----------------------------------
+ -- Other input --           5
+ ---------------------------------------------------------------
+
